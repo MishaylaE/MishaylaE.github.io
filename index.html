@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHY/MAT 131 Course - My Coding Progress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f1; /* Light pink background */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #ff66b2; /* Pink header */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #ff66b2; /* Pink color for text */
+        }
+        .code-block {
+            background-color: #282c34;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #ff66b2; /* Pink footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Snowflake Animation */
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: white;
+            font-size: 24px;
+            user-select: none;
+            pointer-events: none;
+            animation: snow 10s linear infinite;
+        }
+
+        @keyframes snow {
+            0% {
+                transform: translateX(0) translateY(0);
+            }
+            100% {
+                transform: translateX(calc(100vw - 100px)) translateY(100vh);
+            }
+        }
+
+        /* Snowflakes position at different speeds */
+        .snowflake:nth-child(1) {
+            animation-duration: 12s;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .snowflake:nth-child(2) {
+            animation-duration: 9s;
+            left: 30%;
+            animation-delay: 3s;
+        }
+
+        .snowflake:nth-child(3) {
+            animation-duration: 7s;
+            left: 50%;
+            animation-delay: 5s;
+        }
+
+        .snowflake:nth-child(4) {
+            animation-duration: 15s;
+            left: 70%;
+            animation-delay: 2s;
+        }
+
+        .snowflake:nth-child(5) {
+            animation-duration: 10s;
+            left: 90%;
+            animation-delay: 8s;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PHY/MAT 131 - My Coding Progress</h1>
+</header>
+
+<main>
+    <h2>Code Snippets So Far</h2>
+    
+    <div class="code-block">
+        <h3>Example Code #1: Simple Physics Calculation</h3>
+        <pre>
+# Example code to calculate velocity
+
+initial_velocity = 0  # m/s
+final_velocity = 20  # m/s
+time = 5  # seconds
+
+velocity = (final_velocity - initial_velocity) / time
+print(f"Velocity: {velocity} m/s")
+        </pre>
+    </div>
+
+    <div class="code-block">
+        <h3>Example Code #2: Solving a Linear Equation</h3>
+        <pre>
+# Example code to solve a linear equation: ax + b = 0
+
+a = 2
+b = -6
+
+x = -b / a
+print(f"The solution to the equation is x = {x}")
+        </pre>
+    </div>
+
+    <div class="code-block">
+        <h3>Example Code #3: Matrix Operations</h3>
+        <pre>
+# Using numpy to perform matrix multiplication
+
+import numpy as np
+
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+
+result = np.dot(A, B)
+print(f"Matrix multiplication result:\n{result}")
+        </pre>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 PHY/MAT 131 - My Coding Progress</p>
+</footer>
+
+<!-- Snowflakes -->
+<div class="snowflake">❄</div>
+<div class="snowflake">❄</div>
+<div class="snowflake">❄</div>
+<div class="snowflake">❄</div>
+<div class="snowflake">❄</div>
+
+</body>
+</html>
